@@ -1,0 +1,197 @@
+[
+  {
+    "timestamp": "2026-03-16T09:54:12.884697+00:00",
+    "deployed": false,
+    "reason": "dry-run mode",
+    "best_result": {
+      "win_rate": 0.4676,
+      "wins": 65,
+      "losses": 74,
+      "total_signals": 139,
+      "avg_pnl_pct": -0.1031,
+      "sharpe": -0.0736,
+      "sample_signals": [
+        {
+          "ts": "2026-03-10T14:00:00.000000Z",
+          "direction": "BUY",
+          "score": 75,
+          "pnl": -2.043
+        },
+        {
+          "ts": "2026-03-13T00:00:00.000000Z",
+          "direction": "BUY",
+          "score": 68,
+          "pnl": -0.137
+        },
+        {
+          "ts": "2026-03-13T13:00:00.000000Z",
+          "direction": "BUY",
+          "score": 68,
+          "pnl": -3.208
+        },
+        {
+          "ts": "2026-03-15T22:00:00.000000Z",
+          "direction": "BUY",
+          "score": 65,
+          "pnl": -0.319
+        },
+        {
+          "ts": "2026-03-16T03:00:00.000000Z",
+          "direction": "BUY",
+          "score": 69,
+          "pnl": -0.165
+        }
+      ]
+    },
+    "best_params": {
+      "weights": {
+        "momentum": 0.3,
+        "rsi": 0.2,
+        "ema_trend": 0.2,
+        "volume": 0.2,
+        "accuracy": 0.15
+      },
+      "params": {
+        "rsi_period": 14,
+        "ema_fast": 7,
+        "ema_slow": 21,
+        "momentum_scale": 15,
+        "volume_spike_cap": 1.5,
+        "alert_buy_threshold": 65,
+        "alert_sell_threshold": 35,
+        "score_interval_secs": 30
+      }
+    },
+    "current_win_rate": 0.4615
+  },
+  {
+    "timestamp": "2026-03-16T09:54:30.311490+00:00",
+    "deployed": false,
+    "reason": "Insufficient improvement: +2.59% (need \u22653%)",
+    "best_result": {
+      "win_rate": 0.4874,
+      "wins": 290,
+      "losses": 305,
+      "total_signals": 595,
+      "avg_pnl_pct": 0.0567,
+      "sharpe": 0.0411,
+      "sample_signals": [
+        {
+          "ts": "2026-03-12T14:00:00.000000Z",
+          "direction": "SELL",
+          "score": 35,
+          "pnl": -0.35
+        },
+        {
+          "ts": "2026-03-13T14:00:00.000000Z",
+          "direction": "SELL",
+          "score": 29,
+          "pnl": 1.855
+        },
+        {
+          "ts": "2026-03-13T15:00:00.000000Z",
+          "direction": "SELL",
+          "score": 35,
+          "pnl": 0.913
+        },
+        {
+          "ts": "2026-03-13T17:00:00.000000Z",
+          "direction": "SELL",
+          "score": 35,
+          "pnl": -0.093
+        },
+        {
+          "ts": "2026-03-16T03:00:00.000000Z",
+          "direction": "BUY",
+          "score": 68,
+          "pnl": -0.165
+        }
+      ]
+    },
+    "best_params": {
+      "weights": {
+        "momentum": 0.4,
+        "rsi": 0.15,
+        "ema_trend": 0.15,
+        "volume": 0.15,
+        "accuracy": 0.05
+      },
+      "params": {
+        "rsi_period": 16,
+        "ema_fast": 11,
+        "ema_slow": 28,
+        "momentum_scale": 25,
+        "volume_spike_cap": 1.0,
+        "alert_buy_threshold": 65,
+        "alert_sell_threshold": 35,
+        "score_interval_secs": 30
+      }
+    },
+    "current_win_rate": 0.4615
+  },
+  {
+    "timestamp": "2026-03-16T09:54:41.306594+00:00",
+    "deployed": true,
+    "reason": "Improved win_rate by 13.85%",
+    "best_result": {
+      "win_rate": 0.6,
+      "wins": 3,
+      "losses": 2,
+      "total_signals": 5,
+      "avg_pnl_pct": 0.5002,
+      "sharpe": 0.2216,
+      "sample_signals": [
+        {
+          "ts": "2025-04-07T06:00:00.000000Z",
+          "direction": "SELL",
+          "score": 30,
+          "pnl": -2.904
+        },
+        {
+          "ts": "2025-04-09T17:00:00.000000Z",
+          "direction": "BUY",
+          "score": 70,
+          "pnl": 1.323
+        },
+        {
+          "ts": "2025-11-21T07:00:00.000000Z",
+          "direction": "SELL",
+          "score": 30,
+          "pnl": 2.042
+        },
+        {
+          "ts": "2026-02-05T15:00:00.000000Z",
+          "direction": "SELL",
+          "score": 30,
+          "pnl": 3.289
+        },
+        {
+          "ts": "2026-02-28T06:00:00.000000Z",
+          "direction": "SELL",
+          "score": 30,
+          "pnl": -1.249
+        }
+      ]
+    },
+    "best_params": {
+      "weights": {
+        "momentum": 0.25,
+        "rsi": 0.2,
+        "ema_trend": 0.2,
+        "volume": 0.15,
+        "accuracy": 0.2
+      },
+      "params": {
+        "rsi_period": 14,
+        "ema_fast": 8,
+        "ema_slow": 20,
+        "momentum_scale": 15,
+        "volume_spike_cap": 1.5,
+        "alert_buy_threshold": 70,
+        "alert_sell_threshold": 30,
+        "score_interval_secs": 30
+      }
+    },
+    "current_win_rate": 0.4615
+  }
+]

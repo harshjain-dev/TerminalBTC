@@ -1,0 +1,16 @@
+# Secrets
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+btc.log
+bot.log
+
+# macOS
+.DS_Store
