@@ -1,28 +1,28 @@
 {
   "version": 3,
-  "deployed_at": "2026-03-17T03:26:16.520895+00:00",
-  "description": "Reduced ema_fast and increased volume weight",
+  "deployed_at": "2026-03-17T03:26:17.003951+00:00",
+  "description": "Adjusted rsi_period and volume_spike_cap",
   "weights": {
-    "momentum": 0.2,
+    "momentum": 0.25,
     "rsi": 0.2,
-    "ema_trend": 0.25,
-    "volume": 0.25,
-    "accuracy": 0.1
+    "ema_trend": 0.2,
+    "volume": 0.15,
+    "accuracy": 0.2
   },
   "params": {
-    "rsi_period": 12,
-    "ema_fast": 5,
-    "ema_slow": 18,
-    "momentum_scale": 10,
+    "rsi_period": 10,
+    "ema_fast": 8,
+    "ema_slow": 20,
+    "momentum_scale": 15,
     "volume_spike_cap": 2.0,
-    "alert_buy_threshold": 75,
-    "alert_sell_threshold": 25,
+    "alert_buy_threshold": 70,
+    "alert_sell_threshold": 30,
     "score_interval_secs": 30
   },
   "performance": {
     "backtest_win_rate": 1.0,
-    "backtest_signals": 1,
-    "backtest_sharpe": 13225.2851,
+    "backtest_signals": 2,
+    "backtest_sharpe": 2.3449,
     "live_win_rate": null,
     "live_signals": 0,
     "failure_reason": null
