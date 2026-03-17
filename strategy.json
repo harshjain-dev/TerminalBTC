@@ -1,28 +1,28 @@
 {
-  "version": 2,
-  "deployed_at": "2026-03-16T09:54:41.243004+00:00",
-  "description": "Adjusted accuracy weight and score interval for more precise signal generation",
+  "version": 3,
+  "deployed_at": "2026-03-17T03:26:16.520895+00:00",
+  "description": "Reduced ema_fast and increased volume weight",
   "weights": {
-    "momentum": 0.25,
+    "momentum": 0.2,
     "rsi": 0.2,
-    "ema_trend": 0.2,
-    "volume": 0.15,
-    "accuracy": 0.2
+    "ema_trend": 0.25,
+    "volume": 0.25,
+    "accuracy": 0.1
   },
   "params": {
-    "rsi_period": 14,
-    "ema_fast": 8,
-    "ema_slow": 20,
-    "momentum_scale": 15,
-    "volume_spike_cap": 1.5,
-    "alert_buy_threshold": 70,
-    "alert_sell_threshold": 30,
+    "rsi_period": 12,
+    "ema_fast": 5,
+    "ema_slow": 18,
+    "momentum_scale": 10,
+    "volume_spike_cap": 2.0,
+    "alert_buy_threshold": 75,
+    "alert_sell_threshold": 25,
     "score_interval_secs": 30
   },
   "performance": {
-    "backtest_win_rate": 0.6,
-    "backtest_signals": 5,
-    "backtest_sharpe": 0.2216,
+    "backtest_win_rate": 1.0,
+    "backtest_signals": 1,
+    "backtest_sharpe": 13225.2851,
     "live_win_rate": null,
     "live_signals": 0,
     "failure_reason": null
